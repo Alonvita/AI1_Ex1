@@ -123,16 +123,16 @@ public class SerializeSolution {
      */
     public static String movementToString(int dRow, int dCol) {
         if(dRow < 0)
-            return "U";
-
-        if(dRow > 0)
             return "D";
 
+        if(dRow > 0)
+            return "U";
+
         if(dCol < 0)
-            return "L";
+            return "R";
 
         if(dCol > 0)
-            return "R";
+            return "L";
 
         return "";
     }

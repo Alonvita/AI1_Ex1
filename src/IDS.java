@@ -81,7 +81,8 @@ public class IDS<T> implements Searcher<T> {
 
         // iteratively deepen in map's depth, searching for a path
         for (int depth = 1; depth < maxDepth; ++depth) {
-            visited.add(searchable.getStart()); // TODO: CHECK THIS....
+            visited.add(searchable.getStart());
+
             // run DLS
             List<T> path = DLS(searchable, searchable.getStart(), searchable.getGoal(), depth);
 
